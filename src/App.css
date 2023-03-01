@@ -8,9 +8,9 @@
   --bg-color-alt: hsl(213, 10%, 21%);
   --container-color: hsl(217, 18%, 14%);
   --border-color: hsl(210, 2%, 65%);
-  --first-gradient: linier-gradient(0deg, var(--bg-color-alt) 0%, (var(--bg-color) 100%));
-  --second-gradient: linier-gradient(180deg, var(--bg-color-alt) 0%, (var(--bg-color) 100%));
-  --third-gradient: linier-gradient(180deg, var(--bg-color) 0%, (var(--bg-color) 100%));
+  --first-gradient: linear-gradient(0deg, var(--bg-color-alt) 0%, var(--bg-color) 100%);
+  --second-gradient: linear-gradient(180deg, var(--bg-color-alt) 0%, var(--bg-color) 100%);
+  --third-gradient: linear-gradient(180deg, var(--bg-color) 0%, var(--bg-color) 100%);
 
   --body-font: "Jost", sans-serif;
   --second-font: "Caveat", cursive;
@@ -49,7 +49,7 @@ body {
 
 body {
   color: var(--text-color);
-  background-color: var(--bg-color);
+  background: var(--bg-color);
 }
 
 h1,
@@ -93,9 +93,14 @@ img {
   margin-inline: auto;
 }
 
+.grid{
+  display: grid;
+  gap: 24px;
+}
+
 .text-cs {
   text-transform: uppercase;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.05em;
 }
 
 .btn,
@@ -136,26 +141,26 @@ img {
   opacity: 1;
 }
 
-.shape{
+.shape {
   position: absolute;
   filter: invert(1);
   opacity: 0.6;
 }
 
-.section{
+.section {
   padding-bottom: 200px;
 }
 
 .section__title,
-.section__subtitle{
+.section__subtitle {
   text-align: center;
 }
 
-.section__title{
- font-size: var(--h1-font-size); 
+.section__title {
+  font-size: var(--h1-font-size);
 }
 
-.section__subtitle{
+.section__subtitle {
   color: var(--primary-color);
   font-size: var(--smaller-font-size);
   text-transform: uppercase;
@@ -163,7 +168,7 @@ img {
   margin-bottom: 50px;
 }
 
-.section__subtitle span{
+.section__subtitle span {
   font-family: var(--second-font);
   color: var(--title-color);
   font-size: var(--h3-font-size);
@@ -171,34 +176,42 @@ img {
   margin-left: 10px;
 }
 
-.card{
+.card {
   background-color: var(--container-color);
   overflow: hidden;
+  text-align: left;
+  position: relative;
 }
 
-.card-one{
+.card-one {
   padding: 30px 35px;
   border-radius: 18px;
 }
 
-.link{
+.card-two {
+  padding: 30px ;
+  border-radius: 20px;
+}
+
+.link {
   display: inline-flex;
   align-items: center;
   color: var(--title-color);
   font-weight: 700;
 }
 
-.link__icon{
+.link__icon {
   color: var(--primary-color);
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
   transition: all 0.3s var(--transition);
 }
 
-.link:hover .link__icon{
+.link:hover .link__icon {
   margin-left: 15px;
 }
 
-.c__shape{
+.c__shape {
   right: -24px;
   bottom: -24px;
   width: 141px;

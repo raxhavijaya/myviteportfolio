@@ -64,4 +64,30 @@ height: 13px;
 top: 3px;
 }
 
+@media only screen and (max-width:768px){
+  .swiper-wrapper {
+    margin-bottom: 40px;
+  }
+  
+  .services__subtitle {
+    margin-bottom: 35px;
+  }
+  
+  .services__title {
+    font-size: var(--largest-font-size);
+    min-height: 80px;
+  }
+  
+  .services__description {
+    min-height: 135px;
+  }
+  
+  .swiper-slide, swiper-slide{
+    height: auto;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets::before{
+    height: 1px;
+  }
+}
 

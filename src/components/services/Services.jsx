@@ -12,6 +12,7 @@ import "./services.css";
 const Services = () => {
   return (
     <section className="services section" id="services">
+      <div className="services__container container">
       <h2 className="section__title text-cs">What I Do</h2>
       <p className="section__subtitle">
         My <span>Services</span>
@@ -22,7 +23,7 @@ const Services = () => {
           clickable: true,
         }}
         breakpoints={{
-          540: {
+          320: {
             slidesPerView: 1,
             spaceBetween: 30,
           },
@@ -53,6 +54,7 @@ const Services = () => {
           );
         })}
       </Swiper>
+      </div>
     </section>
   );
 };

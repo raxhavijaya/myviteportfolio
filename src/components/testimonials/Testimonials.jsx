@@ -10,7 +10,8 @@ import "./testimonials.css";
 
 const Testimonials = () => {
   return (
-    <section className="testimonials section" id="testimonials">
+    <section className="testimonials section" id="testimonial">
+      <div className="testimonials__container container">
       <h2 className="section__title text-cs">Testimonials</h2>
       <p className="section__subtitle">
         My <span>Customers Say</span>
@@ -21,7 +22,7 @@ const Testimonials = () => {
           clickable: true,
         }}
         breakpoints={{
-          540: {
+          320: {
             slidesPerView: 1,
             spaceBetween: 30,
           },
@@ -54,6 +55,7 @@ const Testimonials = () => {
           );
         })}
       </Swiper>
+      </div>
     </section>
   );
 };

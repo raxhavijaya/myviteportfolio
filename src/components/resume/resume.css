@@ -83,3 +83,35 @@
 .resume__description {
   margin-block: 20px 30px;
 }
+
+@media only screen and (max-width: 768px) {
+  .resume__subtitle {
+    font-size: var(--normal-font-size);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .resume__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .resume__heading {
+    font-size: var(--h5-font-size);
+  }
+
+  .resume__icon {
+    font-size: var(--h4-font-size);
+    width: 38px;
+    height: 38px;
+    right: -20px;
+    bottom: -19px;
+  }
+
+  .resume__title {
+    font-size: var(--h5-font-size);
+  }
+
+  .resume__group {
+    margin-bottom: 80px;
+  }
+}

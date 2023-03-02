@@ -29,8 +29,8 @@
   transition: all 0.3s var(--transition);
 }
 
-.active-work{
-    color: var(--primary-color);
+.active-work {
+  color: var(--primary-color);
 }
 
 .active-work::before,
@@ -79,4 +79,56 @@
 
 .portfolio__description {
   min-height: 125px;
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio__list {
+    column-gap: 10px;
+  }
+
+  .portfolio__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .portfolio__img {
+    height: 200px;
+    width: 100%;
+  }
+
+  .portfolio__title {
+    font-size: var(--h5-font-size);
+  }
+
+  .portfolio__description {
+    min-height: 105px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .portfolio__container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  .portfolio__img {
+    height: 150px;
+    width: 100%;
+  }
+
+  .portfolio__title {
+    font-size: var(--larger-font-size);
+  }
+
+  .portfolio__description {
+    min-height: 95px;
+  }
+
+  .portfolio__list {
+    margin-bottom: 35px;
+  }
+
+  .portfolio__list-item {
+    font-size: 11px;
+  }
 }

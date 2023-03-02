@@ -25,8 +25,8 @@ export const links = [
     path: "skills",
   },
   {
-    name: "Works",
-    path: "work",
+    name: "Portfolio",
+    path: "portfolio",
   },
   {
     name: "Resume",
@@ -151,13 +151,6 @@ export const projects = [
   },
   {
     id: 4,
-    img: Project4,
-    category: "Photography",
-    title: "Mozar",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-  },
-  {
-    id: 5,
     img: Project5,
     category: "Development",
     title: "Stay Fit",

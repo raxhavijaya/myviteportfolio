@@ -34,10 +34,36 @@
   --transition: cubic-bezier(0.3, 0, 0.3, 1);
 }
 
+.light-theme {
+  --title-color: hsl(0, 0%, 3%);
+  --text-color: hsl(0, 1%, 17%);
+  --bg-color: hsl(47, 51%, 91%);
+  --bg-color-alt: hsl(0, 0%, 98%);
+  --container-color: hsl(0, 0%, 95%);
+  --border-color: hsl(0, 0%, 5%);
+
+  --shadow: 5px 5px rgba(0 0 0 / 20%);
+}
+
+.light-theme .skills__bar {
+  background: rgba(0, 0, 0, 0.1);
+}
+.light-theme .skills__percentage {
+  background: var(--border-color);
+}
+
+.light-theme .skills__percentage span {
+  background-color: var(--primary-color);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 button,
@@ -50,6 +76,10 @@ body {
 body {
   color: var(--text-color);
   background: var(--bg-color);
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 h1,
@@ -89,11 +119,10 @@ img {
 
 .container {
   max-width: 1300px;
-  padding-inline: 12px;
   margin-inline: auto;
 }
 
-.grid{
+.grid {
   display: grid;
   gap: 24px;
 }
@@ -141,6 +170,11 @@ img {
   opacity: 1;
 }
 
+.light-theme .shape {
+  opacity: 1;
+  filter: none;
+}
+
 .shape {
   position: absolute;
   filter: invert(1);
@@ -149,6 +183,10 @@ img {
 
 .section {
   padding-bottom: 200px;
+}
+
+.main {
+  overflow: hidden;
 }
 
 .section__title,
@@ -189,7 +227,7 @@ img {
 }
 
 .card-two {
-  padding: 30px ;
+  padding: 30px;
   border-radius: 20px;
 }
 
@@ -216,4 +254,198 @@ img {
   bottom: -24px;
   width: 141px;
   height: 141px;
+}
+
+@media only screen and (max-width: 1024px) {
+  button,
+  input,
+  body {
+    font-size: var(--smaller-font-size);
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
+  .container {
+    padding-inline: 30px;
+  }
+
+  .grid {
+    gap: 20px;
+  }
+
+  .btn,
+  .hero__link {
+    height: 50px;
+  }
+
+  .btn {
+    padding-inline: 35px;
+  }
+
+  .section {
+    padding-bottom: 190px;
+  }
+
+  .section__title {
+    font-size: var(--h2-font-size);
+  }
+
+  .section__subtitle {
+    font-size: var(--tiny-font-size);
+    margin-bottom: 45px;
+  }
+
+  .section__subtitle span {
+    font-size: var(--h4-font-size);
+    margin-left: 8px;
+  }
+
+  .card-one {
+    padding: 28px 33px;
+  }
+
+  .card-two {
+    padding: 28px;
+  }
+
+  .link__icon {
+    margin-left: 9px;
+    margin-top: 4px;
+  }
+
+  .link:hover .link__icon {
+    margin-left: 15px;
+  }
+
+  .c__shape {
+    right: -18px;
+    bottom: -18px;
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  button,
+  input,
+  body {
+    font-size: var(--tiny-font-size);
+  }
+
+  .grid {
+    gap: 18px;
+  }
+
+  .btn,
+  .hero__link {
+    height: 45px;
+  }
+
+  .btn {
+    padding-inline: 23px;
+  }
+
+  .section {
+    padding-bottom: 180px;
+  }
+
+  .section__title {
+    font-size: var(--h3-font-size);
+  }
+
+  .section__subtitle {
+    margin-bottom: 42px;
+  }
+
+  .section__subtitle span {
+    font-size: var(--h5-font-size);
+    margin-left: 7px;
+  }
+
+  .card-one {
+    padding: 26px 31px;
+  }
+
+  .card-two {
+    padding: 26px;
+  }
+
+  .link__icon {
+    margin-left: 8px;
+    margin-top: 3px;
+  }
+
+  .link:hover .link__icon {
+    margin-left: 13px;
+  }
+
+  .c__shape {
+    width: 90px;
+    height: 90px;
+    right: -16px;
+    bottom: -16px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .grid {
+    gap: 17px;
+  }
+
+  .btn,
+  .hero__link {
+    height: 39px;
+  }
+
+  .btn {
+    padding-inline: 30px;
+  }
+
+  .section__title {
+    font-size: var(--h4-font-size);
+  }
+
+  .section__subtitle {
+    margin-bottom: 39px;
+  }
+
+  .section__subtitle span {
+    font-size: var(--larger-font-size);
+    margin-left: 6px;
+  }
+
+  .card-one {
+    padding: 23px 28px;
+  }
+
+  .card-two {
+    padding: 23px;
+  }
+
+  .link__icon {
+    margin-left: 7px;
+    margin-top: 2px;
+  }
+
+  .link:hover .link__icon {
+    margin-left: 11px;
+  }
+
+  .c__shape {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width:576px){
+  .c__shape {
+    width: 80px;
+    height: 80px;
+    right: -13px;
+    bottom: -13px;
+  }
+
+  
 }

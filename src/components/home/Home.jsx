@@ -1,16 +1,32 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
+// import '../../scrollReveal'
 import profileImg from "../../assets/profile-img.png";
 import shapeOne from "../../assets/shape-1.png";
 import shapeTwo from "../../assets/shape-2.png";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import "./home.css";
+import ScrollReveal from "scrollreveal";
+
+
 
 const Home = () => {
+  const sr_down = useRef(null);
+
+  useEffect(() => {
+    const sr = ScrollReveal()
+    sr.reveal(sr_down.current, {
+      origin: "top",
+      distance: "60px",
+      duration: 2500,
+      delay:400,
+    });
+  }, []);
+
   return (
     <section className="home section" id="home">
-      <div className="home__wrapper">
-        <div className="home__container container">
-          <p className="home__subtitle text-cs">
+      <div ref={sr_down} className="home__wrapper">
+        <div  className="home__container container">
+          <p  className="home__subtitle text-cs">
             Hello, <span>My Name is</span>
           </p>
 
@@ -22,7 +38,7 @@ const Home = () => {
             <span className="text-cs">I am</span> <b>Front End Developer</b>
           </p>
 
-          <div className="home__img-wrapper">
+          <div  className="home__img-wrapper box">
             <div className="home__banner">
               <img src={profileImg} alt="" className="home__profile" />
             </div>

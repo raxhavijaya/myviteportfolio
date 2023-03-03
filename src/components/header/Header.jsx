@@ -63,7 +63,7 @@ const Header = () => {
               {links.map(({ name, path }, index) => {
                 return (
                   <li className="nav__item" key={index}>
-                    <Link className="nav__link text-cs" to={path} spy={true} hashSpy={true} smooth={true} offset={-80} duration={500} onClick={() => setShowMenu(!showMenu)}>
+                    <Link className="nav__link text-cs" to={path} spy={true} hashSpy={true} smooth={true} offset={-100} duration={500} onClick={() => setShowMenu(!showMenu)}>
                       {name}
                     </Link>
                   </li>

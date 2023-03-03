@@ -81,6 +81,7 @@
   padding-block: 20px;
   resize: none;
   color: var(--title-color);
+  font-size: var(--small-font-size);
 }
 
 .contact__submit {
@@ -175,5 +176,9 @@
     display: grid;
     justify-content: center;
     row-gap: 10px;
+  }
+
+  .contact__form-area .contact__form-input {
+    font-size: var(--tiny-font-size);
   }
 }

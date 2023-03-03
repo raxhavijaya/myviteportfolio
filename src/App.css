@@ -252,8 +252,8 @@ img {
 .c__shape {
   right: -24px;
   bottom: -24px;
-  width: 141px;
-  height: 141px;
+  width: 121px;
+  height: 121px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -322,8 +322,8 @@ img {
   .c__shape {
     right: -18px;
     bottom: -18px;
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
   }
 }
 
@@ -382,10 +382,10 @@ img {
   }
 
   .c__shape {
-    width: 90px;
-    height: 90px;
-    right: -16px;
-    bottom: -16px;
+    width: 80px;
+    height: 80px;
+    right: -13px;
+    bottom: -13px;
   }
 }
 
@@ -432,20 +432,4 @@ img {
   .link:hover .link__icon {
     margin-left: 11px;
   }
-
-  .c__shape {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-@media only screen and (max-width:576px){
-  .c__shape {
-    width: 80px;
-    height: 80px;
-    right: -13px;
-    bottom: -13px;
-  }
-
-  
 }

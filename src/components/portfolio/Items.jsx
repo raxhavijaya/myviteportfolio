@@ -7,7 +7,7 @@ const Items = ({ projectItems }) => {
   return (
     <>
       {projectItems.map((projectItem) => {
-        const { id, img, category, title, description } = projectItem;
+        const { id, img, category, title, description, href } = projectItem;
         return (
           <motion.div layout animate={{ opacity: 1, scale: 1 }} initial={{ opacity: 1, scale: 0.6 }} exit={{ opacity: 0.8, scale: 0.6 }} transition={{duration:0.4}}
           className="portfolio__items card card-two" key={id}>
@@ -17,8 +17,8 @@ const Items = ({ projectItems }) => {
             <span className="portfolio__category text-cs">{category}</span>
             <h3 className="portfolio__title">{title}</h3>
             <p className="portfolio__description">{description}</p>
-            <a href="" className="link">
-              See Pricing
+            <a href={href} target="_blank" className="link">
+              See Project
               <FaArrowRight className="link__icon"></FaArrowRight>
             </a>
             <img src={shapeTwo} alt="" className="shape c__shape" />

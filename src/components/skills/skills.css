@@ -34,6 +34,7 @@
 
 .skills__description {
   margin-bottom: 30px;
+  height: 200px;
 }
 
 .skills__bar,
@@ -63,7 +64,7 @@
   position: absolute;
 }
 
-@media only screen and (max-width: 675px) {
+@media only screen and (max-width: 768px) {
   .skills {
     background-image: var(--third-gradient);
   }
@@ -80,6 +81,10 @@
     width: 20px;
     height: 20px;
     top: -11px;
+  }
+
+  .skills__description{
+    height: auto;
   }
 }
 

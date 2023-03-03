@@ -7,13 +7,13 @@ const Footer = () => {
     <footer className="footer">
         <div className="footer__container container grid">
         <div className="footer__socials">
-          <a href="" className="footer__social-link">
+          <a href="https://www.linkedin.com/in/raxhavijaya31/" className="footer__social-link">
             <FaLinkedin />
           </a>
-          <a href="" className="footer__social-link">
+          <a href="https://github.com/raxhavijaya" className="footer__social-link">
             <FaGithub />
           </a>
-          <a href="" className="footer__social-link">
+          <a href="https://www.instagram.com/raxhavijayar/" className="footer__social-link">
             <FaInstagram />
           </a>
         </div>

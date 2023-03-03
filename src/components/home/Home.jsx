@@ -51,23 +51,23 @@ const Home = () => {
           </p>
 
           <div className="home__socials">
-            <a href="" className="home__social-link">
+            <a href="https://www.linkedin.com/in/raxhavijaya31/" target="_blank" className="home__social-link">
               <FaLinkedin />
             </a>
-            <a href="" className="home__social-link">
+            <a href="https://github.com/raxhavijaya" target="_blank" className="home__social-link">
               <FaGithub />
             </a>
-            <a href="" className="home__social-link">
+            <a href="https://www.instagram.com/raxhavijayar/" target="_blank" className="home__social-link">
               <FaInstagram />
             </a>
           </div>
 
           <div className="home__btns">
-            <a href="" className="btn text-cs">
+            <a href="/CV_Raxha Vijaya Ramadhan NEW.pdf" download={true} className="btn text-cs">
               Download CV
             </a>
 
-            <a href="" className="hero__link text-cs">
+            <a href="#skills" className="hero__link text-cs">
               My Skills
             </a>
           </div>

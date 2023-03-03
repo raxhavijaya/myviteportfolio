@@ -78,7 +78,7 @@
 }
 
 .portfolio__description {
-  min-height: 125px;
+  min-height: 200px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -101,7 +101,7 @@
   }
 
   .portfolio__description {
-    min-height: 105px;
+    min-height: 160px;
   }
 }
 
@@ -118,10 +118,6 @@
 
   .portfolio__title {
     font-size: var(--larger-font-size);
-  }
-
-  .portfolio__description {
-    min-height: 95px;
   }
 
   .portfolio__list {

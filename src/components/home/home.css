@@ -363,6 +363,10 @@
 }
 
 @media only screen and (max-width: 700px) {
+  .home {
+    margin-top: 10px;
+  }
+
   .home__wrapper {
     gap: 1.5rem;
     row-gap: 4rem;
@@ -372,6 +376,10 @@
 
   .home__title {
     text-align: center;
+  }
+
+  .home__btns{
+    column-gap: 54px;
   }
 
   .home__text {
@@ -442,7 +450,6 @@
     bottom: 12%;
     right: 0;
   }
-
 
   .home__data .text-lg {
     text-align: center;

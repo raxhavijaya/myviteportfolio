@@ -143,7 +143,7 @@
   bottom: 14px;
 }
 
-@media only screen and (max-width: 1115px){
+@media only screen and (max-width: 1115px) {
   .show-menu {
     width: 312px;
   }
@@ -151,18 +151,39 @@
   .nav__link {
     font-size: var(--normal-font-size);
   }
-  
+
   .nav__data {
     padding: 80px 84px 0 110px;
   }
 }
 
-@media only screen and (max-width:700px){
-  .header{
+@media only screen and (max-width: 700px) {
+  .header {
     padding: 15px;
   }
 
-  .nav__logo{
+  .nav__btns {
+    column-gap: 20px;
+  }
+
+  .theme__toggler {
+    font-size: var(--largest-font-size);
+  }
+
+  .nav__toggle {
+    width: 26px;
+    height: 24px;
+  }
+
+  .animate-toggle span:first-child {
+    top: 12px;
+  }
+
+  .animate-toggle span:last-child {
+    top: 12px;
+  }
+
+  .nav__logo {
     margin-top: 5px;
     font-size: var(--normal-font-size);
   }

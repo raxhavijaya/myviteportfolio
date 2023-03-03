@@ -54,13 +54,13 @@
 
 .resume__content {
   padding-inline: 30px 50px;
-  max-height: 0;
+  height: 0;
   overflow: hidden;
   transition: all 1s ease 0s;
 }
 
 .show-content {
-  max-height: 500px;
+  height: 200px;
 }
 
 .resume__date-title {

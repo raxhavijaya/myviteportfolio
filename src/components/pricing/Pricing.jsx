@@ -31,11 +31,11 @@ const Pricing = () => {
             </li>
 
             <li className="list__item">
-              <del>Advertising</del>
+              <del>Responsive Design</del>
             </li>
 
             <li className="list__item">
-              <del>Photography</del>
+              <del>SEO</del>
             </li>
           </ul>
 
@@ -68,11 +68,11 @@ const Pricing = () => {
 
             <li className="list__item">
               <FaCheck className="list__icon"></FaCheck>
-              <span>Advertising</span>
+              <span>Responsive Design</span>
             </li>
 
             <li className="list__item">
-              <del>Photography</del>
+              <del>SEO</del>
             </li>
           </ul>
 
@@ -104,12 +104,12 @@ const Pricing = () => {
 
             <li className="list__item">
               <FaCheck className="list__icon"></FaCheck>
-              <span>Advertising</span>
+              <span>Responsive Design</span>
             </li>
 
             <li className="list__item">
               <FaCheck className="list__icon"></FaCheck>
-              <span>Photography</span>
+              <span>SEO</span>
             </li>
           </ul>
 

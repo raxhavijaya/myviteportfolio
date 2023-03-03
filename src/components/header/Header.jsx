@@ -72,13 +72,13 @@ const Header = () => {
             </ul>
 
             <div className="header__socials">
-              <a href="" className="header__social-link">
+              <a href="https://www.linkedin.com/in/raxhavijaya31/" className="header__social-link">
                 <FaLinkedin />
               </a>
-              <a href="" className="header__social-link">
+              <a href="https://github.com/raxhavijaya" className="header__social-link">
                 <FaGithub />
               </a>
-              <a href="" className="header__social-link">
+              <a href="https://www.instagram.com/raxhavijayar/" className="header__social-link">
                 <FaInstagram />
               </a>
             </div>
